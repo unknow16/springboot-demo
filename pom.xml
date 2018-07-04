@@ -12,6 +12,8 @@
 		<module>autoconfig-test-starter</module>
 		<module>autoconfig-test</module>
 		<module>data-jpa</module>
+		<module>data-jdbc</module>
+		<module>data-redis</module>
 	</modules>
 
 	<parent>
