@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active:
+    - dev
+    
+server:
+  port: 1111
+
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: fuyi
+    password: fuyi
+    
+info:
+  appName: actuator
+  appVersion: 1.0.0
+  author: fuyi
+  date: 2018-07-09
+  
+logging:
+  path: C:\
+  
+endpoints:
+  shutdown:
+    enabled: true
+  health:
+    path: /heat
+    
+management:
+  context-path: /manage
+  port: 3333
+  
+  

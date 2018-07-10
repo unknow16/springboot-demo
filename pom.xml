@@ -14,6 +14,8 @@
 		<module>data-jpa</module>
 		<module>data-jdbc</module>
 		<module>data-redis</module>
+		<module>data-mybatis</module>
+		<module>actuator</module>
 	</modules>
 
 	<parent>
