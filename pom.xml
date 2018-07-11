@@ -16,6 +16,10 @@
 		<module>data-redis</module>
 		<module>data-mybatis</module>
 		<module>actuator</module>
+		<module>cache-map</module>
+		<module>cache-ehcache</module>
+		<module>cache-redis</module>
+		<module>cache-guava</module>
 	</modules>
 
 	<parent>
