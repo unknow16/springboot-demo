@@ -4,3 +4,19 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+    
+    # druid 监控配置
+    druid:
+      stat-view-servlet:
+        enabled: true
+        login-username: root
+        login-password: root
+        
+      web-stat-filter:
+        enabled: true
+        
+      filters: stat,wall,config
+    
+security:
+  basic:
+    enabled: false

@@ -1,5 +1,6 @@
 package com.fuyi.data.jpa;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,5 +23,11 @@ public class TestApp {
 		user.setName("fuyi");
 		user.setAge(123);
 		userRepository.save(user);
+	}
+	
+	@Test
+	public void test0() {
+		User user = userRepository.findUserById(144L);
+		Assertions.assertThat(user.getName()).isEqualTo("fuyi");
 	}
 }

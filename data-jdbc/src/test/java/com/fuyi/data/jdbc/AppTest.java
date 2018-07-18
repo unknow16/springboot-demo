@@ -1,5 +1,7 @@
 package com.fuyi.data.jdbc;
 
+import javax.sql.DataSource;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,11 +19,11 @@ public class AppTest {
 	@Autowired
 	UserService userService;
 	
-	@Before
+/*	@Before
 	public void setUp() {
 		// 准备，清空user表
 		userService.deleteAllUsers();
-	}
+	}*/
 
 	@Test
 	public void test() throws Exception {
@@ -41,6 +43,13 @@ public class AppTest {
 
 		// 查数据库，应该有5个用户
 		Assert.assertEquals(3, userService.getAllUsers().intValue());
-
+	}
+	
+	@Autowired
+	DataSource ds;
+	
+	@Test
+	public void test2() {
+		System.out.println("-------------> " + ds.getClass());
 	}
 }
